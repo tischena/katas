@@ -29,3 +29,50 @@ def trailing_zeroes_fact(n):
     #     else:
     #         break
     # return zero_count
+
+
+
+#You are provided with a large string and a 
+# dictionary of the words. 
+# You have to find if the input string 
+# can be segmented into words using the dictionary or not.  
+
+def string_to_dict(string_input, dict_input):
+    if len(string_input) == 0:
+        return True
+    else:
+        for i in range(1, len(string_input) + 1):
+            if string_input[0:i] in dict_input:
+                if string_to_dict(string_input[i:], dict_input):
+                    return True
+        return False
+    
+    
+    
+#Remove duplicates from a sorted array and get the length
+
+def remove_dublicates(array_input):
+    unique_array = []
+    for num in array_input:
+        if num not in unique_array:
+            unique_array.append(num)
+        else:
+            continue
+    return len(unique_array)
+
+
+
+#Find the missing number in the array
+
+def missing_num(array_input):
+    sorted_array = sorted(array_input)
+    if sorted_array[1] - sorted_array[0] == sorted_array[2] - sorted_array[1]:
+        for i in range(len(sorted_array)):
+            if sorted_array[i] + (sorted_array[1] - sorted_array[0]) not in array_input:
+                return f'missing number is {sorted_array[i] + (sorted_array[1] - sorted_array[0])}'
+    elif sorted_array[2] - sorted_array[1] == sorted_array[3] - sorted_array[2]:
+        for i in range(len(sorted_array)):
+            if sorted_array[i] + (sorted_array[2] - sorted_array[1]) not in array_input:
+                return f'missing number is {sorted_array[i] + (sorted_array[2] - sorted_array[1])}'
+    else:
+        return 'no missing numbers'
