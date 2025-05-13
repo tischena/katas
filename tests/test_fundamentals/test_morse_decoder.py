@@ -1,4 +1,4 @@
-from morse_decoder import morse_decoder_func
+from fundamentals.morse_decoder import morse_decoder_func
 
 def test_one_letter_h():
     input = '....'

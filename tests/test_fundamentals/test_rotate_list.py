@@ -1,4 +1,4 @@
-from rotate_list import rotate_list_func
+from fundamentals.rotate_list import rotate_list_func
 
 def test_zero_list_unchanged():
     input_list = [1, 2, 3]

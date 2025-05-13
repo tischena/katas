@@ -1,4 +1,4 @@
-from pig_latin import pig_latin_func
+from fundamentals.pig_latin import pig_latin_func
 
 def test_consonant_ay():
     input = 'northcoders'

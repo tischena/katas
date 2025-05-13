@@ -1,4 +1,4 @@
-from coins_change_calc import coins_change_calc_func
+from fundamentals.coins_change_calc import coins_change_calc_func
 
 def test_one_p_singular():
     input = 1

@@ -1,4 +1,4 @@
-from sentence_to_camel_case import to_camel_case_func
+from fundamentals.sentence_to_camel_case import to_camel_case_func
 
 def test_true():
     input1 = "this sentence"

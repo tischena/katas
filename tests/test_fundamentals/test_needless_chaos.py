@@ -1,4 +1,4 @@
-from needless_chaos import needless_chaos_func, results_array
+from fundamentals.needless_chaos import needless_chaos_func, results_array
 
 def test_needless_chaos():
     results_array.clear()

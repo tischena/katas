@@ -1,4 +1,4 @@
-from fold_string import fold_string_func
+from fundamentals.fold_string import fold_string_func
 
 def test_code_even():
     input = 'code'

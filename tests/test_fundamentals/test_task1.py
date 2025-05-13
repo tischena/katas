@@ -1,7 +1,7 @@
 #import sys
 #sys.path.append('../katas')
 
-from task1 import replace_space, perfect_square, trailing_zeroes_fact, string_to_dict, remove_dublicates, missing_num
+from fundamentals.task1 import replace_space, perfect_square, trailing_zeroes_fact, string_to_dict, remove_dublicates, missing_num
 
 def test_replace_space():
     input1 = 'D t C mpBl ckFrid yS le'

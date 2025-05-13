@@ -1,4 +1,4 @@
-from till_addition import till_addition_func
+from fundamentals.till_addition import till_addition_func
 
 def test_ads_ps():
     input = { "1p": 1, "2p": 1, '10p': 1 }

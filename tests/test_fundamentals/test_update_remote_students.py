@@ -1,4 +1,4 @@
-from update_remote_students import update_remote_students
+from fundamentals.update_remote_students import update_remote_students
 
 def test_original_list_is_immutable():
     input = [{ "name": 'Euler', "age": 27 }]

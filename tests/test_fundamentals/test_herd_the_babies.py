@@ -1,4 +1,4 @@
-from herd_the_babies import herd_the_babies_func
+from fundamentals.herd_the_babies import herd_the_babies_func
 
 def test_aA_return_Aa():
     input = 'aA'
